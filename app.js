@@ -50,9 +50,9 @@ const link = fs.readFileSync('./api-gasolineras.txt', 'utf8').trim()
 console.log("link", link)
 
 request(link, function (error, response, body) {
-    console.log(body)
+
     const json = JSON.parse(body)
-    console.log("json", json)
+    console.log("GASOLINERAS", json)
 })
 
 const csvFilePath='./menuPizzas.csv'
@@ -60,9 +60,9 @@ const csvFilePath='./menuPizzas.csv'
 csv()
 .fromFile(csvFilePath)
 .then((jsonObj)=>{
-    console.log( "jsonfromcsv", jsonObj);
+    console.log( "PIZZAS", jsonObj);
 
-    
+
 })
 
 

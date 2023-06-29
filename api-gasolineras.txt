@@ -1,1 +1,1 @@
-https://api.datos.gob.mx/v1/precio.gasolina.public
+https://api.datos.gob.mx/v1/precio.gasolina.publico?page=2&pageSize=5
