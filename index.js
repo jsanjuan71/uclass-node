@@ -60,7 +60,7 @@ generateRandomNumberAfter2Secs(100)
 
         readLine(resultOne, 'nombres.txt')
             .then( (name) => {
-                console.log("Nombre: ", name)
+                console.log("then Nombre: ", name)
             } )
             .catch( (reason) => {
                 console.error("Error en la promesa de readline: ", reason)
@@ -84,11 +84,11 @@ console.log("Nombre: ", nombre)
 console.log("Buscando genero musical al azar")
 */
 
-
+console.log("Buscando nombre al azar")
 generateRandomNumberAfter2Secs(70)
     .then( async(resultOne) => {
-        const name = await readLine(resultOne, 'generos.txt')
-        console.log("Nombre: ", name)
+        const name = await readLine(resultOne, 'nombres.txt')
+        console.log("await Nombre: ", name)
 
     })
     .catch( (reason) => {
